@@ -1,0 +1,145 @@
+.yourCart {
+    padding: 0px 0px 49px 1309px;
+    transition: "transform" 0.2s;
+  }
+  
+  .yourCart :hover {
+    transform: scale(1.1);
+  }
+  
+  .cartbtn {
+    background-color: rgb(168 67 67);
+    border: none;
+    display: flex;
+    border: 3px solid white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 780;
+    cursor: pointer;
+  }
+  .carticon {
+    color: white;
+    font-size: 20px;
+    padding-top: 2px;
+  }
+  
+  .text {
+    color: white;
+    padding: 0px 14px 0px 15px;
+    font-size: 15px;
+  }
+.btn-10 {
+    padding: 10px 3px 0px 3px;
+    text-align: center;
+    align-items: center;
+  }
+  .btn-9 {
+    background-color: rgb(57, 218, 164);
+    padding: 5px 4px 5px 4px;
+    border: none;
+    border-radius: 5px;
+    color: #338b3e;
+    font-weight: 740;
+    box-shadow: 0 2px 10px #5e5d5b;
+    cursor: pointer;
+  }
+  .btn-8 {
+    background-color: rgb(88, 23, 6);
+    padding: 5px 4px 5px 4px;
+    border: none;
+    border-radius: 5px;
+    color: #dfaaaa;
+    font-weight: 740;
+    box-shadow: 0 2px 10px #5e5d5b;
+    cursor: pointer;
+  }
+  .btn-10 :hover {
+    transform: scale(1.1);
+    background-color: white;
+  }
+  
+.background {
+  background-image: url("../recepies/finalbg2.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 120px;
+  background-blend-mode: darken;
+}
+.orders {
+  height: 100vh;
+  
+}
+.order-parent{
+  padding-top: 100px;
+
+}
+button span {
+  font-size: 20px;
+}
+.background button {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 7px 5px 7px 9px;
+  background-color: #a1ff5a;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.choose {
+  position: relative;
+  float: left;
+  top: 30%;
+  left: 50%;
+  transform: translate(-554%, -50%);
+}
+
+.background .intro {
+  border: 1px solid white;
+  position: absolute;
+  width: 412px;
+  background-color: white;
+  padding-left: 57px;
+}
+
+.meals {
+  display: grid;
+  /* background-color: lightsalmon; */
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  align-items: center;
+  text-align: center;
+}
+.meal-item img {
+  width: 200px;
+}
+
+.orders h1 {
+  text-align: center;
+}
+
+@media (max-width: 900px){
+    .meals{
+        grid-template-columns:  4fr 4fr;
+    }
+    .meal-item{
+        padding:20px
+    }
+}
+@media (max-width: 600px){
+    .intro{
+        top: 50%;
+        left:18%
+    }
+}
+@media (max-width: 503px){
+    .intro{
+        display: none;
+    }
+    .meals{
+        grid-template-columns: 6fr;
+    }
+}
